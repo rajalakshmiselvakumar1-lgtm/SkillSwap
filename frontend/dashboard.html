@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dashboard – SkillSwap</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="topbar"><strong>SkillSwap</strong><button onclick="logout()">Log out</button></header>
+<main class="wrap"><div class="card"><h1 id="hello">Dashboard</h1><p>You are logged in. Skills, matching and exchanges will appear here as they are built.</p></div></main>
+<script src="js/auth.js" data-protect></script>
+<script>document.addEventListener('ss:ready', e => document.getElementById('hello').textContent = 'Welcome, ' + e.detail.name);</script>
+</body></html>

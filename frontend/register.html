@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Create account – SkillSwap</title><link rel="stylesheet" href="css/style.css"></head>
+<body><div class="auth"><aside class="auth-side"><h1>Trade what you know for what you want to learn.</h1><p>List the skills you can teach and the ones you want to learn. SkillSwap pairs you with people who want the opposite.</p><div class="swap"><span class="t">I teach Python</span><span aria-hidden="true">⇄</span><span class="l">I learn Guitar</span></div></aside>
+<main class="auth-main"><form class="card" id="registerForm" novalidate>
+<h2>Create your account</h2>
+<label for="name">Full name</label><input id="name" name="name" autocomplete="name" required>
+<label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required>
+<label for="password">Password (6+ characters)</label><input id="password" name="password" type="password" autocomplete="new-password" required>
+<label for="confirmPassword">Confirm password</label><input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" required>
+<button type="submit">Create account</button>
+<div id="msg" class="msg" role="alert"></div>
+<p class="alt">Already registered? <a href="login.html">Log in</a></p>
+</form></main></div>
+<script src="js/auth.js"></script></body></html>
